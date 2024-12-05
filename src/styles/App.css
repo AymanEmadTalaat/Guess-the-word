@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.languages-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  max-width: 350px;
+  height: 51.5px;
+  margin-block: 3rem;
+  padding: 0px;
+  gap: 0.2rem;
+}
+
+.words-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+  width: 334px;
+  height: 40px;
+}
+
+.words-container > span {
+  width: 40px;
+  height: 40px;
+  background: #323232;
+  color: transparent;
+  border-bottom: 1px solid #f9f4da;
+  padding: 6px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding: 0px;
+  gap: 8px;
+  max-width: 480px;
+  height: 164px;
+}
+
+.keyboard > button,
+.btn {
+  color: #1e1e1e;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.keyboard > button {
+  width: 40px;
+  height: 40px;
+  background: #fcba29;
+  padding: 6px;
+}
+
+.keyboard > button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn {
+  width: 228px;
+  height: 40px;
+  background: #11b5e5;
+  margin-top: 1.5rem;
+  padding: 6px 12px;
+}
+
+.btn:active {
+  transform: translateY(4px);
+}
+
+.keyboard > button.green {
+  background-color: #10a95b;
+}
+
+.keyboard > button.red {
+  background-color: #ec5d49;
+}
+
+.words-container > span.visible {
+  color: #f9f4da;
+}
+
+.words-container > span.invisible {
+  color: transparent;
+}
+
+.words-container > span.gameOver {
+  color: #ec5d49;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.confetti {
+  width: 100vw;
+  height: 100vh;
+}
